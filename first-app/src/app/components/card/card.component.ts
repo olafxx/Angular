@@ -42,5 +42,7 @@ export class CardComponent {
         this.title = event.target.value
     }
 
-
+    onChangeRefInput( value: string ) {        
+        this.title = value
+    }
 }

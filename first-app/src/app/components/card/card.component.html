@@ -10,7 +10,13 @@
             &nbsp;
             <button [disabled]="disabledRightButton" class="button-right" (click)="onClickRightButton($event)">Toggle right</button>
         </div>
-        <p><input type="text" (input)="onChangeInput($event)" [value]="title"></p>
+        
+        <p>Банйдинг без сылки
+            <input type="text" (input)="onChangeInput($event)" [value]="title">
+        </p>
+        <p>
+            Банйдинг через сыслку
+            <input type="text" #refInput (input)="onChangeRefInput(refInput.value)" [value]="title"></p>
     </div>
     
 </div>
