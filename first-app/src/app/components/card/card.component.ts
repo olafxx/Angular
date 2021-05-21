@@ -9,6 +9,13 @@ import { Component } from '@angular/core'
 export class CardComponent {
 
     title ='TItle cards'
+    
     desc = 'Description card item'
+
+    cardDetail = {
+        id: 1,
+        name: 'Item name',
+        desc: 'My little test description'
+    }
 
 }
