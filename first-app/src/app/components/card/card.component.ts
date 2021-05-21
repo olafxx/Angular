@@ -26,7 +26,7 @@ export class CardComponent {
 
 /**/
 
-    classColor = 'red'
+    textColor = 'red'
 
 /**/
 
