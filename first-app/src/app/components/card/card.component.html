@@ -11,12 +11,15 @@
             <button [disabled]="disabledRightButton" class="button-right" (click)="onClickRightButton($event)">Toggle right</button>
         </div>
         
-        <p>Банйдинг без сылки
+        <p>Баиндинг, двухсторонний без сылки
             <input type="text" (input)="onChangeInput($event)" [value]="title">
         </p>
         <p>
-            Банйдинг через сыслку
+            Баиндинг, двухсторонний через сыслку
             <input type="text" #refInput (input)="onChangeRefInput(refInput.value)" [value]="title"></p>
+
+        <p>Баиндинг, двухсторонний через модель
+           <input type="text" #refInput [(ngModel)]="title"></p>
     </div>
     
 </div>
