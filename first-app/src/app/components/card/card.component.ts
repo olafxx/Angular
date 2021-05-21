@@ -23,6 +23,13 @@ export class CardComponent {
     }   
 
 
+
+/**/
+
+    classColor = 'red'
+
+/**/
+
     disabledLeftButton = false
     disabledRightButton = false
 
@@ -36,6 +43,7 @@ export class CardComponent {
         console.log(event)        
     }
 
+/**/
 
     onChangeInput(event:any){
         console.log(event)
@@ -45,4 +53,10 @@ export class CardComponent {
     onChangeRefInput( value: string ) {        
         this.title = value
     }
+
+
+/**/
+ 
+
+
 }
