@@ -18,4 +18,8 @@ export class CardComponent {
         desc: 'My little test description'
     }
 
+    getNotification(){
+        return 'Warning notification'
+    }
+
 }
