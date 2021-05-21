@@ -20,6 +20,27 @@ export class CardComponent {
 
     getNotification(){
         return 'Warning notification'
+    }   
+
+
+    disabledLeftButton = false
+    disabledRightButton = false
+
+    onClickLeftButton(event:any) {
+        this.disabledRightButton = !this.disabledRightButton        
+        console.log(event)     
     }
+
+    onClickRightButton(event:any) {
+        this.disabledLeftButton = !this.disabledLeftButton        
+        console.log(event)        
+    }
+
+
+    onChangeInput(event:any){
+        console.log(event)
+        this.title = event.target.value
+    }
+
 
 }

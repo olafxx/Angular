@@ -5,6 +5,12 @@
         <p>{{ desc }}</p>
         <p>{{ cardDetail | json }}</p>
         <p>{{ getNotification() }}</p>
+        <div>
+            <button [disabled]="disabledLeftButton" class="button-left" (click)="onClickLeftButton($event)">Toggle left</button>
+            &nbsp;
+            <button [disabled]="disabledRightButton" class="button-right" (click)="onClickRightButton($event)">Toggle right</button>
+        </div>
+        <p><input type="text" (input)="onChangeInput($event)" [value]="title"></p>
     </div>
     
 </div>
