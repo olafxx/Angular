@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-app';
+
+  isContentVisible = true
+  
+  toggleContent() { 
+
+      this.isContentVisible = !this.isContentVisible
+
+  }
+  
 }
