@@ -2,8 +2,12 @@
 
 <button (click)="toggleContent()">Toggle content</button>
 
-<div class="content" *ngIf="isContentVisible">
+<div class="content" *ngIf="isContentVisible; else elseSection">
     <app-card></app-card>
     <app-card></app-card>
     <app-card></app-card>
 </div>
+
+<ng-template #elseSection>
+    <p>Testing  structure directive: if-else</p>
+</ng-template>    
