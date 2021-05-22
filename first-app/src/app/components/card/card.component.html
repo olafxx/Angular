@@ -3,13 +3,13 @@
     <div class="cards__item">
         
         <h2 [ngStyle]="{
-            color: (title.length>8) ? 'blue' : 'green',
-            textDecoration: (title.length>8) ? 'none' : 'underline'
+            color: (card.title.length>8) ? 'blue' : 'green',
+            textDecoration: (card.title.length>8) ? 'none' : 'underline'
         }"
         [ngClass]="textColor"
-        >{{ title }}</h2>
+        >{{ index }} {{ card.title }}</h2>
 
-        <p [class.orange]="textColor === 'orange'">{{ desc }}</p>
+        <p [class.orange]="textColor === 'orange'">{{ card.desc }}</p>
         <p>{{ cardDetail | json }}</p>
         <p>{{ getNotification() }}</p>
         <div>
@@ -19,14 +19,14 @@
         </div>
         
         <p>Баиндинг, двухсторонний без сылки
-            <input type="text" (input)="onChangeInput($event)" [value]="title">
+            <input type="text" (input)="onChangeInput($event)" [value]="card.title">
         </p>
         <p>
             Баиндинг, двухсторонний через сыслку
-            <input type="text" #refInput (input)="onChangeRefInput(refInput.value)" [value]="title"></p>
+            <input type="text" #refInput (input)="onChangeRefInput(refInput.value)" [value]="card.title"></p>
 
         <p>Баиндинг, двухсторонний через модель
-           <input type="text" #refInput [(ngModel)]="title"></p>
+           <input type="text" [(ngModel)]="card.title"></p>
      
            <button (click)="textColor = 'orange'">Change text color</button>
 

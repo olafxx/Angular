@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { Component, Input } from '@angular/core'
+import { Cards } from '../../app.component'
 
 @Component({
     selector: 'app-card',
@@ -8,15 +9,30 @@ import { Component } from '@angular/core'
 
 export class CardComponent {
 
+
+    
+    @Input() card:Cards
+    @Input() index:number
+
+    constructor() {         
+        this.card = <Cards>{};
+        this.index = 0;
+     }
+
+
     title ='TItle cards'
     
     desc = 'Description card item'
+
+
+
 
     cardDetail = {
         id: 1,
         name: 'Item name',
         desc: 'My little test description'
     }
+
 
     getNotification(){
         return 'Warning notification'
@@ -47,15 +63,16 @@ export class CardComponent {
 
     onChangeInput(event:any){
         console.log(event)
-        this.title = event.target.value
+        this.card.title = event.target.value
     }
 
     onChangeRefInput( value: string ) {        
-        this.title = value
+        this.card.title = value
     }
 
 
 /**/
+ 
  
 
 
