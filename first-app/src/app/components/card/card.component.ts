@@ -73,7 +73,7 @@ export class CardComponent {
 
 /**/
  
- 
+   date = new Date();
 
 
 }
