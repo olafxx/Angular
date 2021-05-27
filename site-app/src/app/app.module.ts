@@ -24,8 +24,8 @@ import { Page404Component } from './components/pages/404/404.component';
 
 
 
-import { ReversePipe } from './pipe/reverse.pipe';
-import { HidePipe } from './directive/hide.pipe';
+import { ReversePipe } from './pipes/reverse/reverse.pipe';
+import { NoteDirective } from './directives/note/note.directive';
 
 @NgModule({
   declarations: [
@@ -49,7 +49,7 @@ import { HidePipe } from './directive/hide.pipe';
     Page404Component,
 
     ReversePipe,
-    HidePipe
+    NoteDirective
   ],
   imports: [
     BrowserModule,

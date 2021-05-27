@@ -12,4 +12,5 @@ export class PublicPagesMainComponent implements OnInit {
   ngOnInit(): void {
   }
 
+ 
 }
