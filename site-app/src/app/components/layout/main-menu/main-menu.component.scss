@@ -1,0 +1,16 @@
+.main-menu {
+    margin-bottom: 20px;
+    border:1px solid #ccc;
+    padding: 10px;
+    }
+    .main-menu__item {
+        margin-right: 10px;
+        color:#0000ff;        
+        }
+    .main-menu>.main-menu__item:last-child {
+        margin-right: 0;
+        } 
+
+.active {
+    color:#ff0000;
+}

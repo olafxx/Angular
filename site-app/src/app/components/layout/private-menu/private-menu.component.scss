@@ -1,0 +1,21 @@
+.private-menu {
+    margin-bottom: 20px;
+    border:1px solid #ccc;
+    padding: 10px 0;
+    position: relative;
+    }
+    .private-menu__item {
+        padding: 5px 10px;
+        color:#0000ff;  
+        display: block;
+        }
+    .private-menu__item:hover {
+        background-color: #eee;
+        } 
+    .private-menu>.private-menu__item:last-child {
+        margin-right: 0;
+        } 
+
+.active {
+    background-color:#ccc;
+}
