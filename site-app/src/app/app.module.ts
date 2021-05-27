@@ -11,18 +11,10 @@ import { MainContentComponent } from './components/layout/main-content/main-cont
 import { ButtonComponent } from './components/ui/button/button.component';
 import { LogotypeComponent } from './components/ui/logotype/logotype.component';
  
-import { PrivatePagesAboutComponent } from './components/private/pages/about/about.component';
-import { PrivatePagesInfoComponent } from './components/private/pages/info/info.component';
-
-import { PublicPagesWelcomeComponent } from './components/pages/welcome/welcome.component';
-import { PublicPagesAboutComponent } from './components/pages/about/about.component';
-import { PublicPagesCatalogComponent } from './components/pages/catalog/catalog.component';
-import { PublicPagesInfoComponent } from './components/pages/info/info.component';
-import { PublicPagesMainComponent } from './components/pages/main/main.component'; 
  
-import { Page404Component } from './components/pages/404/404.component';
-
-
+ import { PublicPagesMainComponent } from './components/pages/main/main.component'; 
+ 
+  
 
 import { ReversePipe } from './pipes/reverse/reverse.pipe';
 import { NoteDirective } from './directives/note/note.directive';
@@ -38,16 +30,9 @@ import { NoteDirective } from './directives/note/note.directive';
     ButtonComponent,
     LogotypeComponent,
     
-    PrivatePagesAboutComponent,
-    PrivatePagesInfoComponent,
-     
-    PublicPagesWelcomeComponent,
-    PublicPagesAboutComponent,
-    PublicPagesCatalogComponent,
-    PublicPagesInfoComponent,
-    PublicPagesMainComponent,
-    Page404Component,
-
+      
+     PublicPagesMainComponent,
+ 
     ReversePipe,
     NoteDirective
   ],

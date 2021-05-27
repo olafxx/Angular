@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MainComponent } from './main.component';
+import { Routes, RouterModule } from '@angular/router';
+import { Page404Component } from './404.component';
 
-
+const routes: Routes = [{ path: '', component: Page404Component }];
 
 @NgModule({
-  declarations: [
-    MainComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+  declarations: [ Page404Component ],
+  imports: [RouterModule.forChild(routes)]
 })
-export class MainModule { }
+ 
+ 
+export class Page404Module { }

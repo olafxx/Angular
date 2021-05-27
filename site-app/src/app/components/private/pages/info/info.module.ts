@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+import { PrivatePagesInfoComponent } from './info.component';
 
-
+const routes: Routes = [{ path: '', component: PrivatePagesInfoComponent }];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  declarations: [ PrivatePagesInfoComponent ],
+  imports: [RouterModule.forChild(routes)]
 })
-export class InfoModule { }
+  
+export class PrivateInfoModule { }

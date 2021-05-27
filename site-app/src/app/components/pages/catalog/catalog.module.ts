@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+import { PublicPagesCatalogComponent } from './catalog.component';
 
-
+const routes: Routes = [{ path: '', component: PublicPagesCatalogComponent }];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  declarations: [ PublicPagesCatalogComponent ],
+  imports: [RouterModule.forChild(routes)]
 })
 export class CatalogModule { }
+
+ 

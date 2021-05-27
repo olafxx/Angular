@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+import { PublicPagesInfoComponent } from './info.component';
 
-
+const routes: Routes = [{ path: '', component: PublicPagesInfoComponent }];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  declarations: [ PublicPagesInfoComponent ],
+  imports: [RouterModule.forChild(routes)]
 })
 export class InfoModule { }
+
+ 
