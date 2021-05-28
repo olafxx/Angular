@@ -1,6 +1,8 @@
 # Angular/site-app-server
-Для запуска выбрать любой вариант:\r
-	npm run start\r  
-	npm run serve\r
-	yarn serve\r
-	yarn serve
+<p>Для запуска выбрать любой вариант:</p>
+<ul>
+	<li>npm run start</li>
+	<li>npm run serve</li>
+	<li>yarn serve</li>
+	<li>yarn serve</li>
+</ul>	
