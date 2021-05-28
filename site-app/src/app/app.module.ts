@@ -12,12 +12,17 @@ import { ButtonComponent } from './components/ui/button/button.component';
 import { LogotypeComponent } from './components/ui/logotype/logotype.component';
  
  
- import { PublicPagesMainComponent } from './components/pages/main/main.component'; 
- 
-  
+import { PublicPagesMainComponent } from './components/pages/main/main.component'; 
 
+//Pipes
 import { ReversePipe } from './pipes/reverse/reverse.pipe';
+
+//Directives
 import { NoteDirective } from './directives/note/note.directive';
+
+//Services
+import { HttpClientModule }   from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -38,9 +43,11 @@ import { NoteDirective } from './directives/note/note.directive';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 
