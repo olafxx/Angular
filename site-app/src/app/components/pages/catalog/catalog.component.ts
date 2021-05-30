@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../../../services/httpservice.service';
 
 @Component({
   selector: 'app-catalog',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PublicPagesCatalogComponent implements OnInit {
 
-  constructor() { }
+  constructor(private HttpService:  HttpService) { }
+
+  content: HTMLElement | string = "Empty";
 
   ngOnInit(): void {
-  }
+      this.HttpService.getPageContent("catalog").subscribe( (data:any) => {
+        this.content = data.result;
+      })
+    }
 
 }
