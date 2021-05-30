@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainComponent } from './main.component';
+import { PublicPagesMainComponent } from './main.component';
 
 
 
 @NgModule({
   declarations: [
-    MainComponent
+    PublicPagesMainComponent
   ],
   imports: [
     CommonModule

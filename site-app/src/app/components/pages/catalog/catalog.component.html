@@ -1,3 +1,21 @@
-<p>Public catalog works!</p>
+
 <p>Content from server: {{ content }}</p>
+ 
+<h3>Goods</h3>
+<div class="catalog">
+
+    <div *ngFor="let item of catalog" class="catalog__item">
+
+        <div class="catalog__name">{{ item.name }}</div>
+        <div class="catalog__prev">
+            <img [src]="item.imgs.preview" [alt]="item.name" class="catalog__prev-img" />
+        </div>
+        <div class="catalog__desc">{{ item.description }}</div>
+        <div class="catalog__price">Price: {{ item.price | currency:"USD" }}</div>
+     
+    </div>
+
+</div>
+ 
+
 

@@ -11,10 +11,12 @@ export class PublicPagesCatalogComponent implements OnInit {
   constructor(private HttpService:  HttpService) { }
 
   content: HTMLElement | string = "Empty";
+  catalog: any[] | null = []
 
   ngOnInit(): void {
       this.HttpService.getPageContent("catalog").subscribe( (data:any) => {
         this.content = data.result;
+        this.catalog = data.catalog;
       })
     }
 

@@ -1,0 +1,38 @@
+
+.catalog {   
+    margin-bottom: 20px;
+    }
+    .catalog__item {
+        border:1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        white-space: normal;
+        }
+    .catalog__item>.catalog__item:last-child {
+        margin-bottom: 0;
+        }        
+
+        .catalog__name {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            }
+        .catalog__prev {
+            margin-bottom: 10px;
+
+            }
+            .catalog__prev-img {
+                width: 100px;
+                height: auto;
+                border-radius: 8px;
+            }
+
+        .catalog__desc {
+            margin-bottom: 10px;
+            }
+        .catalog__price {
+            margin-bottom: 10px;
+            color: red;
+            }
+            
