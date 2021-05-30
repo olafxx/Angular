@@ -3,11 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { PrivatePagesAboutComponent } from './about.component';
 import { HttpService } from '../../../../services/httpservice.service';
 
-const routes: Routes = [{ path: '', component: PrivatePagesAboutComponent }];
+import { AboutGuard } from './about.guard';
+
+const routes: Routes = [{ path: '', component: PrivatePagesAboutComponent, canActivate: [AboutGuard] }];
 
 @NgModule({
   declarations: [ PrivatePagesAboutComponent ],
-  providers: [HttpService],
+  providers: [HttpService, AboutGuard],
   imports: [RouterModule.forChild(routes)]
 })
  
