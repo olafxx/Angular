@@ -10,7 +10,7 @@ export class PrivatePagesAboutComponent implements OnInit {
 
   constructor(private HttpService:  HttpService) { }
 
-  content: HTMLElement | string = "Empty";
+  content: HTMLElement | string = this.HttpService.content;
 
   ngOnInit(): void {
       this.HttpService.getPageContent("private/about").subscribe( (data:any) => {

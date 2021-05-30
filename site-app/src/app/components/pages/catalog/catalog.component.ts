@@ -10,7 +10,7 @@ export class PublicPagesCatalogComponent implements OnInit {
 
   constructor(private HttpService:  HttpService) { }
 
-  content: HTMLElement | string = "Empty";
+  content: HTMLElement | string = this.HttpService.content;
   catalog: any[] | null = []
 
   ngOnInit(): void {

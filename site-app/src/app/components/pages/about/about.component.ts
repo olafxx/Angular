@@ -13,13 +13,12 @@ export class PublicPagesAboutComponent implements OnInit {
   constructor(private HttpService: HttpService) { }
 
 
-  content: HTMLElement | string = "Empty";
+  content: HTMLElement | string = this.HttpService.content;
   
 
   ngOnInit(): void {
 
      this.HttpService.getPageContent('about').subscribe((data:any)=>{    
-      console.log(data);  
       this.content =  data.result;
      })
   }
